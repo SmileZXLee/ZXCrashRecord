@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xf5-UH-7Dh"/>
+                        <viewControllerLayoutGuide type="bottom" id="qbC-rh-Fja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHB-JT-m1D">
+                                <rect key="frame" x="36" y="100" width="303" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="chG-QV-Ilp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TM-vD-KSC">
+                                <rect key="frame" x="46" y="141" width="283" height="40"/>
+                                <color key="backgroundColor" red="0.08235294118" green="0.4941176471" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9JN-Il-Ffb"/>
+                                </constraints>
+                                <state key="normal" title="清除CrashCount">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cleanAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ti6-uD-Vy4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZXCrashRecord" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oN-T2-w3t">
+                                <rect key="frame" x="36" y="40" width="303" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="w1V-St-lT7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击屏幕触发崩溃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcw-XT-VbS">
+                                <rect key="frame" x="130" y="325.5" width="114.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tHB-JT-m1D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="75p-ND-5OO"/>
+                            <constraint firstItem="6TM-vD-KSC" firstAttribute="top" secondItem="tHB-JT-m1D" secondAttribute="bottom" constant="20" id="Flv-LY-a2c"/>
+                            <constraint firstItem="6TM-vD-KSC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="IFJ-6z-iPP"/>
+                            <constraint firstItem="dcw-XT-VbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SMj-3U-iiw"/>
+                            <constraint firstItem="dcw-XT-VbS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UYH-jf-LWW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4oN-T2-w3t" secondAttribute="trailing" constant="20" id="YgD-bW-1GG"/>
+                            <constraint firstItem="4oN-T2-w3t" firstAttribute="top" secondItem="xf5-UH-7Dh" secondAttribute="bottom" constant="20" id="aot-7Y-0YU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6TM-vD-KSC" secondAttribute="trailing" constant="30" id="cjQ-Xp-kyv"/>
+                            <constraint firstItem="tHB-JT-m1D" firstAttribute="top" secondItem="4oN-T2-w3t" secondAttribute="bottom" constant="20" id="iOh-wv-ohi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tHB-JT-m1D" secondAttribute="trailing" constant="20" id="msO-9G-6ym"/>
+                            <constraint firstItem="4oN-T2-w3t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xeH-hD-ckW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="crashCountLabel" destination="tHB-JT-m1D" id="DUd-9u-gi2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
